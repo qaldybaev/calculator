@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(7, 52, 38);
+    background: -moz-radial-gradient(circle, rgba(17, 59, 46, 1) 31%, rgb(13, 72, 68) 100%);
+    background: -webkit-radial-gradient(circle, rgba(17, 59, 46, 1) 31%, rgb(9, 61, 58) 100%);
+    background: radial-gradient(circle, rgba(17, 59, 46, 1) 31%, rgb(9, 61, 58) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#113b2e", endColorstr="#249f97", GradientType=1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container input {
+    width: 300px;
+    padding: 12px 30px;
+    font-size: 32px;
+    text-align: right;
+    margin: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #665f5f;
+    border-radius: 5px;
+    outline: none;
+    background-color: #464646;
+    color: #fff;
+}
+
+.calculator {
+    width: 400px;
+    height: 550px;
+    background-color: #090909;
+    padding: 30px 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 8px 12px 1px rgba(67, 64, 64, 0.77);
+    box-shadow: 12px 15px 12px 1px rgba(52, 51, 51, 0.77);
+}
+
+.number {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #464646;
+    font-size: 28px;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.foiz,
+.backspace,
+.delete {
+    background-color: #aca3a3;
+}
+
+.operator,
+.enter {
+    background-color: #d3b808;
+}
